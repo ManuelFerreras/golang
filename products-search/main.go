@@ -73,12 +73,6 @@ func readInput() string {
 	return input
 }
 
-func createFile(path string) error {
-	file, err := os.Create(path)
-	defer file.Close()
-	return err
-}
-
 func writeFile(path string, content []byte) error {
 	err := os.WriteFile(path, content, os.ModeAppend)
 	return err
