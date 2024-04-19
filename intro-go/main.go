@@ -7,6 +7,11 @@ import (
 	"fmt"
 )
 
+// Para instalar paquetes externos se debe crear un go.mod y un go.sum.
+//   Para ello debemos correr los comandos:
+//  go mod init 'nombre del proyecto'
+//  go mod tidy
+
 // Estructuras
 type Producto struct {
 	Titulo      string  `json:"titulo"`
